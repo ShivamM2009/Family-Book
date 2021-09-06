@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Any Name</title>
+    </head>
+    <body>
+        <p>Give Names Of all the Fruits?
+            <h2 id="fn"></h2>
+        </p>
+        <hr>
+        <p>What is the first Fruit?
+            <h2 id="ff"></h2>
+        </p>
+        <hr>
+
+        <p>How many Total Fruits Are There?
+            <h2 id="tf"></h2>
+        </p>
+
+        <p>What Are The Total Fruits Name?
+            <h2 id="tfn"></h2>
+        </p>
+    </body>
+    <Script>
+        var fruits = ["apple","banana","orange","mango"];
+        console.log(fruits);
+        document.getElementById("fn").innerHTML = fruits;
+
+        var firstfruit = fruits[0];
+        console.log(firstfruit);
+        document.getElementById("ff").innerHTML = firstfruit;
+        var lff = fruits.length;
+        console.log(lff);
+        document.getElementById("tf").innerHTML= lff;
+        fruits.push("grapes");
+        console.log(fruits);
+        document.getElementById("tfn").innerHTML = fruits;
+    </Script>
+</html>
